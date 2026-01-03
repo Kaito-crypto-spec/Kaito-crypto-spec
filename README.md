@@ -1,16 +1,135 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Main Server Bot</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #5865F2; /* Discord blurple */
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: var(--card);
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    header h1 { margin: 0; font-size: 1.4rem; color: var(--accent) }
+    nav a {
+      margin-left: 20px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--text) }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 24px;
+      color: var(--muted);
+    }
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #4752c4 }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Main Server Bot</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#commands">Commands</a>
+      <a href="#invite">Invite</a>
+    </nav>
+  </header>
 
-<!--
-**Kaito-crypto-spec/Kaito-crypto-spec** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  <div class="hero">
+    <h2>Your All‑in‑One Discord Companion</h2>
+    <p>Moderation, utilities, fun, and community tools—all in one professional bot.</p>
+    <a href="#invite" class="btn">Invite Bot</a>
+  </div>
 
-Here are some ideas to get you started:
+  <section id="features">
+    <h2>Features</h2>
+    <div class="card">
+      <h3>🛡 Moderation</h3>
+      <p>Kick, ban, mute, and auto‑moderation to keep your server safe.</p>
+    </div>
+    <div class="card">
+      <h3>📜 Utilities</h3>
+      <p>Server info, user info, announcements, and role management tools.</p>
+    </div>
+    <div class="card">
+      <h3>🎭 Fun & Engagement</h3>
+      <p>Anime quotes, trivia, polls, and leveling system to keep members active.</p>
+    </div>
+  </section>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  <section id="commands">
+    <h2>Commands</h2>
+    <div class="card">
+      <p><strong>/ban</strong> – Ban a user</p>
+      <p><strong>/mute</strong> – Mute a user</p>
+      <p><strong>/serverinfo</strong> – View server details</p>
+      <p><strong>/userinfo</strong> – View user details</p>
+      <p><strong>/quote</strong> – Get a random anime quote</p>
+    </div>
+  </section>
+
+  <section id="invite">
+    <h2>Invite the Bot</h2>
+    <p>Ready to power up your server? Click below to invite Main Server Bot.</p>
+    <!-- Replace the link below with your actual bot OAuth2 invite link -->
+    <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=8&scope=bot%20applications.commands" class="btn">Invite Now</a>
+  </section>
+
+  <footer>
+    <small>© 2026 Main Server Bot. Built with ❤️ by Yassen.</small>
+  </footer>
+</body>
+</html>
+
